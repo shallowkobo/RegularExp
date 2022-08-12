@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Take an input from the client and replace email found with ****
+        let email = prompt("What is your email?")
+        //console.log(email)
+
+        let Eoutput = email.match(/@/g)
+
+        alert(Eoutput)
+
+        if (Eoutput == '@'){
+            console.log('******')
+        }
+        else{
+            console.log("Email provided not valid")
+        }
+    </script>
+</body>
+</html>
